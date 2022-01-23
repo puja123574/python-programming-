@@ -1,0 +1,54 @@
+Assignment
+1.Write a program that will find factors of the given number and find whether the factor is even or odd.
+Hint: Use Loop with if-else statements
+
+
+	Solution
+		num=20
+for i in range(1,num+1):
+  			  rem=num%i
+   			 if(rem==0):
+       				 if(i%2==0):
+            					print(i,"is an even factor")
+       				 else:
+            					print(i,"is an odd factor")
+    			else:
+       				 pass
+
+
+2.Write a code that accepts a sequence of words as input and prints the words in a sequence after sorting them alphabetically.
+                   Hint: Use split() to split the string into a list and then apply sort()
+
+        Solution
+my_string = "Welcome to Edureka"
+# breakdown the string into a list of words
+words = my_string.split()
+# sort the list
+words.sort()
+# display the sorted words
+print("The sorted words are:")
+for word in words:
+    print(word)
+	
+
+3.Write a program that will find all the numbers between 1000 and 3000 (both excluded) such that each digit of a number is an odd number. Print the number of such elements
+
+
+Solution
+
+	numbers_list = []
+                        for i in range(1001,3000):
+                        		s = str(i)
+                                     if (int(s[0])%2!=0) and (int(s[1])%2!=0) and (int(s[2])%2!=0) and           (int(s[3])%2!=0):
+                  numbers_list.append(s)
+      print('The length of the list is:',len(numbers_list))
+
+
+
+4.Write a program that accepts a string and calculate the number of letters and digits.
+Suppose if the entered string is: Edureka123
+Then the output will be:
+LETTERS: - 7
+DIGITS: - 3
+
+Solution
